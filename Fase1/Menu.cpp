@@ -1,12 +1,12 @@
 #include "base.h"
 
 class Menu{
-//Prototipo de funciones/menu's
+
 public:
     void Principal(){
-    cout<<"\n******************************\n";
-    cout<<"**** .: Menu Principal :. ****\n\n";
-    cout<<"1) Iniciar Secion \n";
+    cout<<"\n**********************************\n";
+    cout<<"***** .:: Menu Principal ::. *****\n\n";
+    cout<<"1) Iniciar Sesion \n";
     cout<<"2) Registrarse \n";
     cout<<"3) Informacion \n";
     cout<<"4) Salir \n";
@@ -14,7 +14,7 @@ public:
 
     void Administrador(){
         cout<<"\n==================================\n";
-        cout<<"==== .: Menu Administrador :. ====\n";
+        cout<<"==== <> Menu Administrador <> ====\n";
         cout<<"1* Carga de Usuarios \n";
         cout<<"2* Carga de relaciones \n";
         cout<<"3* Carga de publicaciones  \n";
@@ -24,8 +24,8 @@ public:
     }
 
     void Usuario(){
-        cout<<"\n============================\n";
-        cout<<"==== .: Menu Usuario :. ====\n";
+        cout<<"\n==================================\n";
+        cout<<"======= .: Menu Usuario :. =======\n";
         cout<<"1). Perfil \n";
         cout<<"2). Solicitudes \n";
         cout<<"3). Publicaciones  \n";

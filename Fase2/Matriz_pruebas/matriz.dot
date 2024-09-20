@@ -1,0 +1,90 @@
+digraph G {
+	node[shape="box"]
+
+	Nodo0_0[label = "raiz", group = "0"]
+	Nodo0_0->Nodocarlos_0
+	Nodo0_0->Nodocarlos_0[dir = back]
+	Nodo0_0->Nodo0_roberto
+	Nodo0_0->Nodo0_roberto[dir = back] 
+
+	Nodocarlos_0[label = "carlos", group = "carlos"]
+	Nodocarlos_0->Nodopedro_0
+	Nodocarlos_0->Nodopedro_0[dir = back]
+	Nodocarlos_0->Nodocarlos_roberto
+	Nodocarlos_0->Nodocarlos_roberto[dir = back] 
+
+	Nodopedro_0[label = "pedro", group = "pedro"]
+	Nodopedro_0->Nodosamuel_0
+	Nodopedro_0->Nodosamuel_0[dir = back]
+	Nodopedro_0->Nodopedro_roberto
+	Nodopedro_0->Nodopedro_roberto[dir = back] 
+
+	Nodosamuel_0[label = "samuel", group = "samuel"]
+	Nodosamuel_0->Nodolinda_0
+	Nodosamuel_0->Nodolinda_0[dir = back]
+	Nodosamuel_0->Nodosamuel_linda
+	Nodosamuel_0->Nodosamuel_linda[dir = back] 
+
+	Nodolinda_0[label = "linda", group = "linda"]
+	Nodolinda_0->Nodolinda_pedro
+	Nodolinda_0->Nodolinda_pedro[dir = back] 
+
+{rank=same;	Nodo0_0;	Nodocarlos_0;	Nodopedro_0;	Nodosamuel_0;	Nodolinda_0}
+
+
+	Nodo0_roberto[label = "roberto", group = "0"]
+	Nodo0_roberto->Nodocarlos_roberto
+	Nodo0_roberto->Nodocarlos_roberto[dir = back]
+	Nodo0_roberto->Nodo0_maria
+	Nodo0_roberto->Nodo0_maria[dir = back] 
+
+	Nodocarlos_roberto[label = "T", group = "carlos"]
+	Nodocarlos_roberto->Nodopedro_roberto
+	Nodocarlos_roberto->Nodopedro_roberto[dir = back]
+	Nodocarlos_roberto->Nodocarlos_maria
+	Nodocarlos_roberto->Nodocarlos_maria[dir = back] 
+
+	Nodopedro_roberto[label = "T", group = "pedro"]
+	Nodopedro_roberto->Nodopedro_maria
+	Nodopedro_roberto->Nodopedro_maria[dir = back] 
+
+{rank=same;	Nodo0_roberto;	Nodocarlos_roberto;	Nodopedro_roberto}
+
+
+	Nodo0_maria[label = "maria", group = "0"]
+	Nodo0_maria->Nodocarlos_maria
+	Nodo0_maria->Nodocarlos_maria[dir = back]
+	Nodo0_maria->Nodo0_pedro
+	Nodo0_maria->Nodo0_pedro[dir = back] 
+
+	Nodocarlos_maria[label = "T", group = "carlos"]
+	Nodocarlos_maria->Nodopedro_maria
+	Nodocarlos_maria->Nodopedro_maria[dir = back]
+	Nodocarlos_maria->Nodocarlos_pedro
+	Nodocarlos_maria->Nodocarlos_pedro[dir = back] 
+
+	Nodopedro_maria[label = "T", group = "pedro"]
+{rank=same;	Nodo0_maria;	Nodocarlos_maria;	Nodopedro_maria}
+
+
+	Nodo0_pedro[label = "pedro", group = "0"]
+	Nodo0_pedro->Nodocarlos_pedro
+	Nodo0_pedro->Nodocarlos_pedro[dir = back]
+	Nodo0_pedro->Nodo0_linda
+	Nodo0_pedro->Nodo0_linda[dir = back] 
+
+	Nodocarlos_pedro[label = "T", group = "carlos"]
+	Nodocarlos_pedro->Nodolinda_pedro
+	Nodocarlos_pedro->Nodolinda_pedro[dir = back]
+	Nodolinda_pedro[label = "T", group = "linda"]
+{rank=same;	Nodo0_pedro;	Nodocarlos_pedro;	Nodolinda_pedro}
+
+
+	Nodo0_linda[label = "linda", group = "0"]
+	Nodo0_linda->Nodosamuel_linda
+	Nodo0_linda->Nodosamuel_linda[dir = back]
+	Nodosamuel_linda[label = "T", group = "samuel"]
+{rank=same;	Nodo0_linda;	Nodosamuel_linda}
+
+
+}

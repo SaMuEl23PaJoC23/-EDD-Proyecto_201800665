@@ -1,0 +1,32 @@
+[
+  {
+    "emisor": "juan.perez@example.com",
+    "receptor": "maria.lopez@example.com",
+    "estado": "PENDIENTE"
+  },
+  {
+    "emisor": "maria.lopez@example.com",
+    "receptor": "carlos.rodriguez@example.com",
+    "estado": "ACEPTADA"
+  },
+  {
+    "emisor": "carlos.rodriguez@example.com",
+    "receptor": "juan.perez@example.com",
+    "estado": "PENDIENTE"
+  },
+  {
+    "emisor": "ana.martinez@example.com",
+    "receptor": "maria.lopez@example.com",
+    "estado": "ACEPTADA"
+  },
+  {
+    "emisor": "maria.lopez@example.com",
+    "receptor": "linda.cristal@example.com",
+    "estado": "PENDIENTE"
+  },
+  {
+    "emisor": "carlos.rodriguez@example.com",
+    "receptor": "maria.lopez@example.com",
+    "estado": "PENDIENTE"
+  }
+]

@@ -1,0 +1,8 @@
+push del aux (en lista simple) = método pila. 
+
+para la lista simple, se utilizaron 2 punteros, uno PRIMERO y uno ULTIMO, porque
+al momento de usar el método PUSH, los nodos se crean hacia la izquierda de la lista, 
+moviendo el puntero primero con cada nuevo nodo.
+
+Mientras que si se utiliza el método APPEND los nodos se agregan por la derecha, moviendo
+el puntero ultimo con cada nuevo nodo.
