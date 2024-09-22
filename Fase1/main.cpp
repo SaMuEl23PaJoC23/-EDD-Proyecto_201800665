@@ -3,12 +3,17 @@
 #include "AbrirArchivo.cpp"
 #include "Pila.h"
 #include "ListaDoble.h"
+#include "Matriz.h"
 //------------------------------------------------------------------------------------------
 int main(int argc, char const *argv[]){
     Menu m;
     ListaSimple ls;
     Pila p;
     ListaDoble ld;
+    Matriz mtz;
+     //Para agregar un nodo a la matriz: mtz.insert("linda","pedro",true);
+     //Para graficar matriz: mtz.graph();
+
 
     int op1=0, opAdmin=0, opUsu=0, numSol=0, cantSol=0;
     char opUsu2=' ', opSol=' ';

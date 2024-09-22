@@ -70,7 +70,7 @@ void Pila::ActualizarSolPila(string Correo, string Estado){
                 break;
                 }
                 else{
-                    temp->setEstado(Estado);//Actualiza el estado a ACEPTADA o RECHAZADA
+                    temp->setEstado(Estado);//Actualiza el de PENDIENTE a ACEPTADA
                     break;
                 }
             }

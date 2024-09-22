@@ -16,4 +16,6 @@ class Pila{
     void ActualizarSolPila(string Correo, string Estado);
 
     bool buscarPila(string Emisor, string Receptor);
+
+    void eliminarSol(string Correo);
 };
